@@ -16,10 +16,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="checkout" element={<Checkout />} />
-        <Route path="orders" element={<OrderPage />} />
-        <Route path="tracking" element ={<TrackingPage />} />
-        
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<OrderPage />} />
+        <Route path="/tracking" element={<TrackingPage />} />
       </Routes>
     </>
   );
