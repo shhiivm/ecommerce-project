@@ -21,9 +21,9 @@ export const CheckoutHeader = () => {
             )
           </div>
 
-          <div className="checkout-header-right-section">
+          {/* <div className="checkout-header-right-section">
             <img src="images/icons/checkout-lock-icon.png" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
