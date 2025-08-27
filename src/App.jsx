@@ -1,10 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./style/App.css";
 import HomePage from "./pages/HomePage";
-import { TestPage } from "./pages/TestPage";
 import { Checkout } from "./pages/Checkout";
 import { OrderPage } from "./pages/OrderPage";
-import { Header } from "./section/Header";
 import { TrackingPage } from "./pages/TrackingPage";
 
 function App() {

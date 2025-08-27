@@ -1,7 +1,6 @@
 import React from "react";
-import "./header.css";
-import "./orders.css";
-import { Header } from "../section/Header";
+import "../style/pages/orders.css";
+import { Header } from "../components/Header";
 
 export function OrderPage() {
   return (

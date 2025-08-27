@@ -1,6 +1,6 @@
 import React from "react";
-import "./tracking.css";
-import { Header } from "../section/Header";
+import "../style/pages/tracking.css";
+import { Header } from "../components/Header";
 
 export function TrackingPage() {
   return (
