@@ -21,7 +21,7 @@ export function OrderPage() {
                 </div>
                 <div className="order-total">
                   <div className="order-header-label">Total:</div>
-                  <div>$35.06</div>
+                  <div>₹1,448.00</div>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export function OrderPage() {
                 </div>
                 <div className="order-total">
                   <div className="order-header-label">Total:</div>
-                  <div>$41.90</div>
+                  <div>₹1,800.00</div>
                 </div>
               </div>
 

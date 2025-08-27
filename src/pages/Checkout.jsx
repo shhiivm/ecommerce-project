@@ -29,7 +29,7 @@ export function Checkout() {
                   <div className="product-name">
                     Black and Gray Athletic Cotton Socks - 6 Pairs
                   </div>
-                  <div className="product-price">$10.90</div>
+                  <div className="product-price">₹900.00</div>
                   <div className="product-quantity">
                     <span>
                       Quantity: <span className="quantity-label">2</span>
@@ -72,7 +72,7 @@ export function Checkout() {
                         Wednesday, June 15
                       </div>
                       <div className="delivery-option-price">
-                        $4.99 - Shipping
+                        ₹99.00 - Shipping
                       </div>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ export function Checkout() {
                         Monday, June 13
                       </div>
                       <div className="delivery-option-price">
-                        $9.99 - Shipping
+                        ₹199.90 - Shipping
                       </div>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export function Checkout() {
                   <div className="product-name">
                     Intermediate Size Basketball
                   </div>
-                  <div className="product-price">$20.95</div>
+                  <div className="product-price">₹900.00</div>
                   <div className="product-quantity">
                     <span>
                       Quantity: <span className="quantity-label">1</span>
@@ -154,7 +154,7 @@ export function Checkout() {
                         Wednesday, June 15
                       </div>
                       <div className="delivery-option-price">
-                        $4.99 - Shipping
+                        ₹99.00 - Shipping
                       </div>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export function Checkout() {
                         Monday, June 13
                       </div>
                       <div className="delivery-option-price">
-                        $9.99 - Shipping
+                        ₹199.90 - Shipping
                       </div>
                     </div>
                   </div>
@@ -183,27 +183,27 @@ export function Checkout() {
 
             <div className="payment-summary-row">
               <div>Items (3):</div>
-              <div className="payment-summary-money">$42.75</div>
+              <div className="payment-summary-money">₹1,800.00</div>
             </div>
 
             <div className="payment-summary-row">
               <div>Shipping &amp; handling:</div>
-              <div className="payment-summary-money">$4.99</div>
+              <div className="payment-summary-money">₹99.00</div>
             </div>
 
             <div className="payment-summary-row subtotal-row">
               <div>Total before tax:</div>
-              <div className="payment-summary-money">$47.74</div>
+              <div className="payment-summary-money">₹1,899.00</div>
             </div>
 
             <div className="payment-summary-row">
               <div>Estimated tax (10%):</div>
-              <div className="payment-summary-money">$4.77</div>
+              <div className="payment-summary-money">₹189.90</div>
             </div>
 
             <div className="payment-summary-row total-row">
               <div>Order total:</div>
-              <div className="payment-summary-money">$52.51</div>
+              <div className="payment-summary-money">₹2,088.90</div>
             </div>
 
             <button className="place-order-button button-primary">
