@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 // import { products } from "../../starting code/data/products";
 import axios from "axios";
 
-const HomePage = () => {
+const HomePage = ({ cart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Header />
+      <Header cart={cart} />
       <div className="home-page">
         <div className="products-grid">
           {products.map((product) => {
