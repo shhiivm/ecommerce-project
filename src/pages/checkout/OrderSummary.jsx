@@ -1,39 +1,8 @@
-import { React, useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import "../style/pages/checkout.css";
-import { CheckoutHeader } from "../components/CheckoutHeader";
 import dayjs from "dayjs";
-
-import axios from "axios";
-
-export function Checkout({ cart }) {
-  const [deliveryOptions, setDeliveryOptions] = useState([]);
-
-  const [paymentSummary, setPaymentSummary] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get(
-        "http://localhost:3000/api/delivery-options?expand=estimatedDeliveryTime"
-      )
-      .then((response) => {
-        setDeliveryOptions(response.data);
-      });
-
-    axios.get("http://localhost:3000/api/payment-summary").then((response) => {
-      setPaymentSummary(response.data);
-    });
-  }, []);
-  return (
+export function OrderSummary({cart, deliveryOptions}){
+  return(
     <>
-      <title>Checkout</title>
-
-      <CheckoutHeader />
-      <div className="checkout-page">
-        <div className="page-title">Review your order</div>
-
-        <div className="checkout-grid">
-          <div className="order-summary">
+      <div className="order-summary">
             {deliveryOptions.length > 0 &&
               cart.map((cartItem) => {
                 const selectedDeliveryOption = deliveryOptions.find(
@@ -125,55 +94,7 @@ export function Checkout({ cart }) {
                 );
               })}
           </div>
-
-          <div className="payment-summary">
-            <div className="payment-summary-title">Payment Summary</div>
-
-            {paymentSummary && (
-              <>
-                <div className="payment-summary-row">
-                  <div>Items ({paymentSummary.totalItems}):</div>
-                  <div className="payment-summary-money">{`₹${(
-                    paymentSummary.productCostCents * 0.2
-                  ).toFixed(2)}`}</div>
-                </div>
-
-                <div className="payment-summary-row">
-                  <div>Shipping &amp; handling:</div>
-                  <div className="payment-summary-money">{`₹${(
-                    paymentSummary.shippingCostCents * 0.2
-                  ).toFixed(2)}`}</div>
-                </div>
-
-                <div className="payment-summary-row subtotal-row">
-                  <div>Total before tax:</div>
-                  <div className="payment-summary-money">{`₹${(
-                    paymentSummary.totalCostBeforeTaxCents * 0.2
-                  ).toFixed(2)}`}</div>
-                </div>
-
-                <div className="payment-summary-row">
-                  <div>Estimated tax (10%):</div>
-                  <div className="payment-summary-money">{`₹${(
-                    paymentSummary.taxCents * 0.2
-                  ).toFixed(2)}`}</div>
-                </div>
-
-                <div className="payment-summary-row total-row">
-                  <div>Order total:</div>
-                  <div className="payment-summary-money">{`₹${(
-                    paymentSummary.totalCostCents * 0.2
-                  ).toFixed(2)}`}</div>
-                </div>
-
-                <button className="place-order-button button-primary">
-                  Place your order
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      </div>
     </>
   );
+
 }

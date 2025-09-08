@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./style/App.css";
-import HomePage from "./pages/HomePage";
-import { Checkout } from "./pages/Checkout";
+import HomePage from "./pages/home/HomePage";
+import { Checkout } from "./pages/checkout/Checkout";
 import { OrderPage } from "./pages/OrderPage";
 import { TrackingPage } from "./pages/TrackingPage";
 import { useState, useEffect } from "react";
